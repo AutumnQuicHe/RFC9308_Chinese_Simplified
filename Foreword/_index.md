@@ -1,5 +1,5 @@
 ---
-title: "RFC9308 QUIC协议的适用性"
+title: "RFC9308 QUIC协议的适用范围"
 anchor: "RFC9308\_Applicability\_of\_the\_QUIC\_Transport\_Protocol"
 weight: 1
 ---
