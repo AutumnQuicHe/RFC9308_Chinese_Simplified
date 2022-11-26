@@ -31,7 +31,7 @@ Mapping of application data to streams is application specific and described for
 
 * A single stream provides ordering. If the application requires certain data to be received in order, that data should be sent on the same stream. There is no guarantee of transmission, reception, or delivery order across streams.
 
-* 单条流内的数据是有序的。如果应用要求按顺序接收特定数据，那么就应该在同一条流上发送这些数据。在不同的流间，不保证传输、接收和送达顺序。
+* 单条流内的数据是有序的。如果应用要求按顺序接收特定数据，那么就应该在同一条流上发送这些数据。在不同的流间，不保证传输、接收和交付顺序。
 
 * Multiple streams provide concurrency. Data that can be processed independently, and therefore would suffer from head-of-line blocking if forced to be received in order, should be transmitted over separate streams.
 
