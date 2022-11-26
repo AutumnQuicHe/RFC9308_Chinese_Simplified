@@ -35,7 +35,7 @@ Mapping of application data to streams is application specific and described for
 
 * Multiple streams provide concurrency. Data that can be processed independently, and therefore would suffer from head-of-line blocking if forced to be received in order, should be transmitted over separate streams.
 
-* 多条流间的数据是并行的。可以被独立处理，且在强制接收顺序的情况下会引发队头阻塞的数据应该经由多条单独的流来传输。
+* 多条流间的数据是并发的。可以被独立处理，且在强制接收顺序的情况下会引发队头阻塞的数据应该经由多条单独的流来传输。
 
 * Streams can provide message orientation and allow messages to be canceled. If one message is mapped to a single stream, resetting the stream to expire an unacknowledged message can be used to emulate partial reliability for that message.
 
