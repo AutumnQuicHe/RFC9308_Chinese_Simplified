@@ -27,7 +27,7 @@ QUIC并不提供对任何流进行异常处理的接口。如果一条对于应�
 
 Mapping of application data to streams is application specific and described for HTTP/3 in [QUIC-HTTP]. There are a few general principles to apply when designing an application's use of streams:
 
-将应用数据映射至流的方式视应用的不同而不同，《[QUIC-HTTP]()》中描述了HTTP/3的映射。在设计某应用对流的使用方式时，存在一些适用的通用准则：
+将应用数据映射至流的方式视应用的不同而不同，《[QUIC-HTTP](../RFC9114_Chinese_Simplified)》中描述了HTTP/3的映射。在设计某应用对流的使用方式时，存在一些适用的通用准则：
 
 * A single stream provides ordering. If the application requires certain data to be received in order, that data should be sent on the same stream. There is no guarantee of transmission, reception, or delivery order across streams.
 
@@ -51,4 +51,4 @@ QUIC向每条流分配一个数字标识符，称之为流ID。尽管QUIC版本1
 
 The method of allocating stream identifiers to streams opened by the application might vary between transport implementations. Therefore, an application should not assume a particular stream ID will be assigned to a stream that has not yet been allocated. For example, HTTP/3 uses stream IDs to refer to streams that have already been opened but makes no assumptions about future stream IDs or the way in which they are assigned (see Section 6 of [QUIC-HTTP]).
 
-向应用打开的流分配流标识符的方法可能因传输协议的实现不同而不同。因此，应用不应该假设某个特定的流ID会被分配给某条尚未得到分配的流。例如，HTTP/3使用流ID来引用已打开的流，但对于将来的流ID或其分配方式不做任何假设（详见《[QUIC-HTTP]()》的[第6章]()）。
+向应用打开的流分配流标识符的方法可能因传输协议的实现不同而不同。因此，应用不应该假设某个特定的流ID会被分配给某条尚未得到分配的流。例如，HTTP/3使用流ID来引用已打开的流，但对于将来的流ID或其分配方式不做任何假设（详见《[QUIC-HTTP](../RFC9114_Chinese_Simplified)》的[第6章](../RFC9114_Chinese_Simplified/#6_Stream_Mapping_and_Usage)）。

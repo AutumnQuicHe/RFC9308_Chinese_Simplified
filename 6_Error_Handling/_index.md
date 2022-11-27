@@ -7,7 +7,7 @@ rank: "h1"
 
 QUIC recommends that endpoints signal any detected errors to the peer. Errors can occur at the transport layer and the application layer. Transport errors, such as a protocol violation, affect the entire connection. Applications that use QUIC can define their own error detection and signaling (see, for example, Section 8 of [QUIC-HTTP]). Application errors can affect an entire connection or a single stream.
 
-QUIC推荐终端为所有检测到的错误都向对端发出信号。错误可以在传输层和应用层发生。传输层错误，例如协议违反，会影响整条连接。使用QUIC的应用可以定义自己的错误检测与信号机制（作为样例，详见《[QUIC-HTTP]()》的[第8章]()）。应用层错误可以影响整条连接或单条流。
+QUIC推荐终端为所有检测到的错误都向对端发出信号。错误可以在传输层和应用层发生。传输层错误，例如协议违反，会影响整条连接。使用QUIC的应用可以定义自己的错误检测与信号机制（作为样例，详见《[QUIC-HTTP](../RFC9114_Chinese_Simplified)》的[第8章](../RFC9114_Chinese_Simplified/#8_Error_Handling)）。应用层错误可以影响整条连接或单条流。
 
 QUIC defines an error code space that is used for error handling at the transport layer. QUIC encourages endpoints to use the most specific code, although any applicable code is permitted, including generic ones.
 
@@ -15,7 +15,7 @@ QUIC定义了用于传输层错误处理的错误码空间。QUIC鼓励终端使
 
 Applications using QUIC define an error code space that is independent of QUIC or other applications (see, for example, Section 8.1 of [QUIC-HTTP]). The values in an application error code space can be reused across connection-level and stream-level errors.
 
-使用QUIC的应用定义的错误码空间独立于QUIC或其他应用（作为样例，详见《[QUIC-HTTP]()》的[第8.1章]()）。应用层错误码空间中的值可以在连接级错误和流级错误间复用。
+使用QUIC的应用定义的错误码空间独立于QUIC或其他应用（作为样例，详见《[QUIC-HTTP](../RFC9114_Chinese_Simplified)》的[第8.1章](../RFC9114_Chinese_Simplified/#8.1_HTTP3_Error_Codes)）。应用层错误码空间中的值可以在连接级错误和流级错误间复用。
 
 Connection errors lead to connection termination. They are signaled using a CONNECTION_CLOSE frame, which contains an error code and a reason field that can be zero length. Different types of CONNECTION_CLOSE frames are used to signal transport and application errors.
 

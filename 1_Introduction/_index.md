@@ -7,7 +7,7 @@ rank: "h1"
 
 QUIC [QUIC] is a new transport protocol providing a number of advanced features. While initially designed for the HTTP use case, it provides capabilities that can be used with a much wider variety of applications. QUIC is encapsulated in UDP. QUIC version 1 integrates TLS 1.3 [TLS13] to encrypt all payload data and most control information. The version of HTTP that uses QUIC is known as HTTP/3 [QUIC-HTTP].
 
-QUIC（详见《[QUIC]()》）是一种全新的传输协议，它提供了诸多高级特性。尽管起初是为HTTP的使用场景来设计的，但它提供的能力可以被广泛应用在其他应用中。QUIC是用UDP封装的。QUIC版本1中集成了TLS 1.3（详见《[TLS13]()》），从而加密所有载荷数据与绝大多数控制信息。基于QUIC的HTTP版本被称为HTTP/3（详见《[QUIC-HTTP]()》）。
+QUIC（详见《[QUIC](../RFC9000_Chinese_Simplified)》）是一种全新的传输协议，它提供了诸多高级特性。尽管起初是为HTTP的使用场景来设计的，但它提供的能力可以被广泛应用在其他应用中。QUIC是用UDP封装的。QUIC版本1中集成了TLS 1.3（详见《[TLS13](https://www.rfc-editor.org/info/rfc8446)》），从而加密所有载荷数据与绝大多数控制信息。基于QUIC的HTTP版本被称为HTTP/3（详见《[QUIC-HTTP](../RFC9114_Chinese_Simplified)》）。
 
 This document provides guidance for application developers who want to use the QUIC protocol without implementing it on their own. This includes general guidance for applications operating over HTTP/3 or directly over QUIC.
 
