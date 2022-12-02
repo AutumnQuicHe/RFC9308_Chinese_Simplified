@@ -11,7 +11,8 @@ QUIC版本1在基本规范中没有规定一种版本协商机制，但是《[QU
 
 This approach uses a three-stage deployment mechanism, enabling progressive rollout and experimentation with multiple versions across a large server deployment. In this approach, all servers in the deployment must accept connections using a new version (stage 1) before any server advertises it (stage 2), and authentication of the new version (stage 3) only proceeds after advertising of that version is completely deployed.
 
-该方法使用了一项三阶段的部署机制，支持在大型服务器部署中对多版本进行渐进式的版本发布与实验。在此方法中，部署中的所有服务器都必须先接受使用了新版本的连接（阶段1），再宣布对该版本的支持（阶段2），最后仅在宣布支持的新版本已完成部署后才对新版本进行认证（阶段3）。
+该方法使用了一项三阶段的部署机制，支持在大型服务器部署中对多版本进行渐进式的版本发布与实验。
+在此方法中，部署中的所有服务器都必须先接受使用了新版本的连接（阶段1），再宣布对该版本的支持（阶段2），最后仅在宣布支持的新版本已完成部署后才对新版本进行认证（阶段3）。
 
 See Section 5 of [QUIC-VERSION-NEGOTIATION] for details.
 
