@@ -5,8 +5,6 @@ weight: 700
 rank: "h1"
 ---
 
-QUIC version 1 without extensions uses an acknowledgment strategy adopted from TCP (see Section 13.2 of [QUIC]). That is, it recommends that every other packet is acknowledged. However, generating and processing QUIC acknowledgments consumes resources at a sender and receiver. Acknowledgments also incur forwarding costs and contribute to link utilization, which can impact performance over some types of network. Applications might be able to improve overall performance by using alternative strategies that reduce the rate of acknowledgments. [QUIC-ACK-FREQUENCY] describes an extension to signal the desired delay of acknowledgments and discusses use cases as well as implications for congestion control and recovery.
-
 未经扩展的QUIC版本1采用一份源自TCP的确认策略（详见《[QUIC](../RFC9000_Chinese_Simplified)》的[第13.2章](../RFC9000_Chinese_Simplified/#13.2_Generating_Acknowledgments)）。
 也就是说它推荐对所有数据包进行确认。
 然而，创建和处理QUIC确认会同时消耗发送方和接收方的资源。
